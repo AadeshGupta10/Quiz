@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Curiosity Corner</title>
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Scripting -->
+    <script src="index.js"></script>
+
+</head>
+
+<body class="container-fluid">
+    <header class="row">
+        <div class="col mt-4 mb-4">
+            <span class="header_title">
+                The Curiosity Corner
+            </span>
+        </div>
+    </header>
+
+    <section class="main_page">
+        <div class="row heading">
+            <div class="col-sm-7">
+                Choose one from category below & see how many questions you can answer correctly out of 10
+            </div>
+        </div>
+
+        <div class="row selection_section d-flex justify-content-center">
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/geography.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Geography</label>
+                <button class="btn btn-outline-info w-100 mt-3 fw-bold start" id="geography">Start Quiz</button>
+            </div>
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/general_knowledge.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">General Knowledge</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="general_knowledge">Start
+                    Quiz</button>
+            </div>
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/maths.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Maths</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="maths">Start Quiz</button>
+            </div>
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/cinema.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Cinema</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="cinema">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/history.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">History</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="history">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/science.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Science</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="science">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/sports.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Sports</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="sports">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/literature.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Literature</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="literature">Start Quiz</button>
+            </div>
+
+            <!-- <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/animal.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Animal</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="animal">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/food_and_cuisine.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Food & Cuisine</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="food_and_cuisine">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/movie.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Movie</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="movie">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/music.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Music</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="music">Start Quiz</button>
+            </div>
+
+            <div class="col-sm-2 m-2 d-flex flex-column align-items-center ">
+                <img src="Logo/space_and_astronomy.png" alt="" class="quiz_logo">
+                <label class="col text-center quiz_name">Space & Astronomy</label>
+                <button class="btn btn-outline-info w-100 mt-3 start fw-bold " id="space_and_astronomy">Start
+                    Quiz</button>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="row game_zone">
+        <div class="row d-flex justify-content-center column-gap-5 m-0 game_options">
+            <!-- <div class="col text-center d-flex justify-content-center align-content-center topic_header">Topic: <span
+                    class="topic_info"></span></div> -->
+            <div class="col text-center d-flex justify-content-center align-items-center question_number">
+                <span>Question <span class="question_count"></span> out of <span class="question_total"></span></span>
+            </div>
+            <!-- <div class="col-1 text-center bg-dark-subtle quiz_timer d-flex justify-content-center align-items-center "> -->
+        </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-4 p-2 m-0 text-wrap text-break ">
+            <div class="col-7 rounded-5 game_zone_question text-center pt-3 pb-3 p-4 fw-bold "></div>
+        </div>
+
+        <div class="row d-flex justify-content-center p-1 column-gap-5 m-0  text-wrap text-break ">
+            <div
+                class="col-3 rounded-5 game_zone_option pt-2 pb-2 p-3 m-1 fw-medium option1 text-center d-flex align-items-center justify-content-center ">
+            </div>
+            <div
+                class="col-3 rounded-5 game_zone_option pt-2 pb-2 p-3 m-1 fw-medium option2 text-center d-flex align-items-center justify-content-center ">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center p-1 column-gap-5 m-0 text-wrap text-break">
+            <div
+                class="col-3 rounded-5 game_zone_option pt-2 pb-2 p-3 m-1 fw-medium option3 text-center d-flex align-items-center justify-content-center ">
+            </div>
+            <div
+                class="col-3 rounded-5 game_zone_option pt-2 pb-2 p-3 m-1 fw-medium option4 text-center d-flex justify-content-center align-items-center  ">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center m-0 mt-5">
+            <button class="col-4 btn fs-5 fw-bold next_question">Next Question</button>
+        </div>
+    </section>
+
+    <section class="row mt-4 result">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <div>Total Questions</div>
+                    <span>:</span>
+                    <div class="question_total fw-medium "></div>
+                </div>
+                <div class="col-12 p-3">
+                    <div>Correct Questions</div>
+                    <span>:</span>
+                    <div class="correct fw-medium ">00</div>
+                </div>
+                <div class="col-12 p-3">
+                    <div>Wrong Questions</div>
+                    <span>:</span>
+                    <div class="wrong fw-medium ">00</div>
+                </div>
+                <div class="col-12 p-3">
+                    <div>Accuracy</div>
+                    <span>:</span>
+                    <div class="accuracy fw-medium ">00</div>
+                </div>
+                <!-- <div class="col-12 p-3">
+                    <div>Quiz Duration</div>
+                    <span>:</span>
+                </div> -->
+                <button class="col-12 d-flex justify-content-center home btn btn-danger ">Home</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

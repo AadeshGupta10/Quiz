@@ -1,0 +1,317 @@
+body {
+    /* background-image: linear-gradient(#E5E1DA, white); */
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    /* background-color: #92C7CF; */
+    /* background-color: rgb(225, 20, 20); Testing of Color */
+    background-image: url(blue_wave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Playball', cursive;
+    font-size: 2.9rem;
+    border-radius: 0% 0% 60% 60%;
+
+    .col {
+        text-align: center;
+    }
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.game_zone,
+.result {
+    display: none;
+}
+
+section {
+    .heading {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .col-sm-7 {
+            margin: auto;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.2rem;
+            word-spacing: 3px;
+        }
+    }
+
+    .selection_section {
+        padding: 1rem;
+    }
+
+    .row {
+        .col-sm-2 {
+            padding: 1rem;
+            height: 16rem;
+            width: 14rem;
+
+            .quiz_logo {
+                height: 8rem;
+                object-fit: contain;
+                object-position: center;
+                transition: .3s;
+            }
+
+            .quiz_logo:hover {
+                scale: 1.1;
+            }
+
+            .quiz_name {
+                margin-top: 1rem;
+                font-weight: 500;
+                font-size: 1.2rem;
+                cursor: default;
+            }
+        }
+    }
+
+    .row {
+        .game_zone_question {
+            /* background-color: #9ecbd2; */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.502), #42d0e688), url(blue_wave.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .game_zone_option {
+            background-color: #b6d5da;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+
+            background-image: linear-gradient(rgba(255, 255, 255, 0.502), #42d0e688), url(blue_wave.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+
+            border: 4px solid white;
+            transition: .5s;
+        }
+
+        .game_zone_option:hover {
+            background-position: center;
+        }
+
+        .quiz_timer {
+            width: 5rem;
+            height: 5rem;
+            font-size: 1.5rem;
+        }
+
+        .question_number,
+        .topic_header {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .next_question {
+            display: none;
+            background-image: url(blue_wave.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.result {
+    .row {
+        width: 28%;
+
+        .col-12 {
+            display: flex;
+            justify-content: center;
+            margin-top: .7rem;
+
+            div:nth-child(1) {
+                font-size: 1rem;
+                width: 45%;
+                font-weight: bolder;
+            }
+
+            span {
+                font-weight: bolder;
+                margin: 0 1rem;
+            }
+
+            div:nth-child(3) {
+                width: 40%;
+                font-size: 1.1rem;
+                text-align: center;
+            }
+        }
+
+        .home {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.game_zone {
+    margin-top: 1.5rem;
+}
+
+/* Media Query */
+@media screen and (min-width:431px) and (max-width:900px) {
+    header {
+        font-size: 2rem;
+    }
+
+    section {
+        .heading {
+            .col-sm-7 {
+                width: 70%;
+                height: 100%;
+                font-size: 1rem;
+            }
+        }
+
+        .row {
+            .game_zone_question {
+                font-size: .9rem;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .game_zone_option {
+                background-color: #9ecbd2;
+                font-size: 1rem;
+                width: 45%;
+                margin-top: 1rem;
+            }
+
+            .question_number {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .game_zone {
+        margin-top: 2.5rem;
+    }
+
+    .result {
+        .row {
+            width: 45%;
+
+            .col-12 {
+                display: flex;
+                margin-top: .5rem;
+
+                div:nth-child(1) {
+                    font-size: .8rem;
+                    width: 45%;
+                    font-weight: bolder;
+                }
+
+                span {
+                    font-weight: bolder;
+                    margin: 0 1rem;
+                }
+
+                div:nth-child(3) {
+                    width: 40%;
+                    font-size: .8rem;
+                    text-align: center;
+                }
+            }
+
+            .home {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    header {
+        padding: .3rem;
+        font-size: 1.5rem;
+    }
+
+    section {
+        .heading {
+            .col-sm-7 {
+                font-size: .8rem;
+            }
+        }
+
+        .row {
+            .game_zone_question {
+                font-size: .9rem;
+                width: 100%;
+                margin-bottom: .5rem;
+            }
+
+            .game_zone_option {
+                background-color: #9ecbd2;
+                font-size: 1rem;
+                width: 95%;
+                margin-top: 1rem;
+            }
+
+            .question_number {
+                font-size: 1.05rem;
+                font-weight: 500;
+            }
+
+            .next_question {
+                width: 70%;
+            }
+        }
+    }
+
+    .result {
+        .row {
+            width: 80%;
+
+            .col-12 {
+                display: flex;
+                justify-content: center;
+                margin-top: 0;
+
+                div:nth-child(1) {
+                    font-size: .6rem;
+                    width: 45%;
+                    font-weight: bolder;
+                }
+
+                span {
+                    font-weight: bolder;
+                    margin: 0 1rem;
+                }
+
+                div:nth-child(3) {
+                    width: 40%;
+                    font-size: .7rem;
+                    text-align: center;
+                }
+            }
+
+            .home {
+                font-size: .7rem;
+            }
+        }
+    }
+
+    .game_zone {
+        margin-top: 2rem;
+    }
+}
