@@ -4131,7 +4131,7 @@ $(document).ready(function () {
         ]
     }
 
-    console.log(quiz_data.history.length)
+    console.log(quiz_data.literature.length)
 
     var question_counter = 0;
     var number_of_question = 0;
