@@ -4200,20 +4200,14 @@ $(document).ready(function () {
         $(".game_zone").show();
 
         selected_choice = $(this).attr("id");
-        selected_choice = $(this).attr("id");
 
         $(".question_count").text(question_counter + 1);
         $(".question_total").text(total_quiz);
 
         question_random = parseInt(Math.random() * (quiz_data[selected_choice].length));
-        console.log(question_random);
-
-        console.log(question_array);
 
         // Inserting Random Question Number in question_array
         question_array.push(question_random);
-
-        console.log(question_array);
 
         $(".game_zone_question").text(`Q${question_counter + 1} : ` + quiz_data[selected_choice][question_random].question);
 
